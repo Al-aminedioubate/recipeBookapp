@@ -19,14 +19,12 @@ h1{
     font-weight: bold;
 }
 
-ul{
+ul li{
     display: flex;
-    width: fit-content;
+    width: 100%;
     height: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0.3);
-}
-
-ul li{
     list-style: none;
+    margin-top: 15px;
 }
