@@ -2,3 +2,16 @@
 let recipe = document.getElementById("recipe");
 
 const URL = `https://api.spoonacular.com/recipes/random?number=10&apiKey=275d58779ccf4e22af03e792e8819fff`;
+
+async function recupererRecipe() {
+	const requete = await fetch(URL, {
+		method: "GET",
+	});
+	if (!requete.ok) {
+		alert("un probleme est survenu");
+	} else {
+		let donnees = await requete.json();
+		console.log(donnees);
+	}
+}
+recupererRecipe();
