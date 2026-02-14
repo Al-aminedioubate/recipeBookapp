@@ -7,6 +7,7 @@ async function getRecipe() {
 	const requete = await fetch(URL, {
 		method: "GET",
 	});
+
 	if (!requete.ok) {
 		alert("un probleme est survenu");
 	} else {
