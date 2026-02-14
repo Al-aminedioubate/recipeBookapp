@@ -1,14 +1,6 @@
 body{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container{
-    margin: 0 auto;
-    max-width: fit-content;
-    padding: 20px;
+    margin: 0;
+   padding: 0;
 }
 
 header{
@@ -25,19 +17,30 @@ h1{
     font-weight: bold;
 }
 
-.recipeListes{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.container{
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 20px;
 }
 
-ul li{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0.3);
+.recipeListes{
     list-style: none;
-    margin-top: 15px;
-    text-align: justify;
+    margin: 8px;
+    padding: 8px;
+}
+
+.recipe-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2);
+    overflow: hidden;
+}
+
+.recipe-items img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
