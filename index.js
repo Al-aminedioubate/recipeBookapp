@@ -12,6 +12,7 @@ async function getRecipe() {
 	} else {
 		let data = await requete.json();
 		console.log(data);
+		console.log(data.recipes.image);
 	}
 }
 
