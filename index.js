@@ -20,6 +20,10 @@ function displayRecipes(recipes) {
 
 		let recipeIngredients = document.createElement("p");
 		recipeIngredients.innerHTML = `<strong>Ingredients:</strong> ${recipe.extendedIngredients.map((ingredient) => ingredient.original).join(", ")}`;
+
+		recipeLink = document.createElement("a");
+		recipeLink.href = recipe.sourceUrl;
+		recipeLink.textContent = "View Recipe";
 	});
 }
 
