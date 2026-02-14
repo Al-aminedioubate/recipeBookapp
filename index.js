@@ -3,6 +3,9 @@ let recipe = document.getElementById("recipeListes");
 
 const URL = `https://api.spoonacular.com/recipes/random?number=10&apiKey=275d58779ccf4e22af03e792e8819fff`;
 
+//La fonction du traitement des donnees
+
+
 //La fonction de recuperation des donnees a travers l'API
 async function getRecipe() {
 	const requete = await fetch(URL, {
