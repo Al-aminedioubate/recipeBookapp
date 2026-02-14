@@ -24,6 +24,12 @@ function displayRecipes(recipes) {
 		recipeLink = document.createElement("a");
 		recipeLink.href = recipe.sourceUrl;
 		recipeLink.textContent = "View Recipe";
+
+		//Ajoutons tout nos elements creer a la liste
+		itemsListe.appendChild(itemsImg);
+		itemsListe.appendChild(itemsTitle);
+		itemsListe.appendChild(recipeIngredients);
+		itemsListe.appendChild(recipeLink);
 	});
 }
 
