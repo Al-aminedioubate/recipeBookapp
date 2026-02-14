@@ -27,4 +27,5 @@ ul li{
     box-shadow: 0 2px 4px rgba(0, 0, 0.3);
     list-style: none;
     margin-top: 15px;
+    text-align: justify;
 }
