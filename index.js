@@ -1,8 +1,9 @@
 //Declaration et initialisation de nos variables
-let recipe = document.getElementById("recipe2");
+let recipe = document.getElementById("recipeListes");
 
 const URL = `https://api.spoonacular.com/recipes/random?number=10&apiKey=275d58779ccf4e22af03e792e8819fff`;
 
+//La fonction de recuperation des donnees a travers l'API
 async function getRecipe() {
 	const requete = await fetch(URL, {
 		method: "GET",
@@ -12,9 +13,7 @@ async function getRecipe() {
 		alert("un probleme est survenu");
 	} else {
 		let data = await requete.json();
-		console.log(data.recipes[0]);
-		recipe.innerText = data.recipes[1].title;
+		return data;
 	}
 }
-
 getRecipe();
