@@ -30,6 +30,8 @@ function displayRecipes(recipes) {
 		itemsListe.appendChild(itemsTitle);
 		itemsListe.appendChild(recipeIngredients);
 		itemsListe.appendChild(recipeLink);
+
+		recipeListes.appendChild(itemsListe);
 	});
 }
 
@@ -43,7 +45,13 @@ async function getRecipe() {
 		alert("un probleme est survenu");
 	} else {
 		let data = await requete.json();
-		return data;
+		return data.recipes;
 	}
 }
-getRecipe();
+
+async function load() {
+	const recipes = await getRecipe();
+	displayRecipes(recipes);
+}
+
+load();
