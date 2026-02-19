@@ -14,13 +14,14 @@ header{
     color: white;
 }
 
-
+/*Title style*/
 h1{
     font-size: 40px;
     font-family: monospace;
     font-weight: bold;
 }
 
+/*Container style*/
 .container{
     margin: 0 auto;
     max-width: 1400px;
