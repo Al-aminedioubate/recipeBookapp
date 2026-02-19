@@ -1,9 +1,11 @@
+/*General style*/
 body{
     margin: 0;
    padding: 0;
    font-family: Arial, sans-serif; 
 }
 
+/*Header style*/
 header{
     display: flex;
     width: 100%;
@@ -11,6 +13,7 @@ header{
     background: rgb(5, 5, 128);
     color: white;
 }
+
 
 h1{
     font-size: 40px;
