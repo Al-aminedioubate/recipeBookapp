@@ -28,6 +28,7 @@ h1{
     padding: 20px;
 }
 
+/*contenu du liste et ces enfants style*/
 .recipeListes{
     list-style: none;
     margin: 8px;
